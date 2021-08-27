@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookStore Management system</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Assests/CSS/style.css" />
+    <script src="assests/JS/app.js" defer></script>
+  </head>
+  <body>
+    <div class="full-wrapper">
+      <div class="wrapper">
+        <div class="container">
+          <!-- header-start
+ -->
+
+          <div class="d-flex header">
+            <div class="header-left">
+              <img
+                src="assests/img/rokomari_logo.png"
+                alt="Brand Image"
+                class="img-fluid brand-img"
+              />
+            </div>
+            <div class="header-middle">
+              <div class="d-flex">
+                <input type="text" class="form-control" placeholder="search" />
+                <button class="btn btn-primary">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="header-right">
+              <div class="d-flex">
+                <button class="shopping-button">
+                  <i class="fa fa-shopping-cart shopping-logo"></i>
+                </button>
+                <button class="btn btn-warning login">Login</button>
+              </div>
+            </div>
+          </div>
+
+          <!--           header-end
+ -->
+
+          <!-- nav-start
+ -->
+          <nav class="navbar navbar-expand-sm justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Books</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Subject</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Islamic Book</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Academic Order</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Best Seller</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!--         nav end
+ -->
+
+          <!-- books list start
+ -->
+<!--           <ul style="list-style-type: none;">
+            <div class="full-book-wrapper">
+              <div class="book-wrapper-column">
+                <div class="books d-flex">
+                  <li>
+                    <div class="book card">
+                      <img
+                        src="https://lh3.googleusercontent.com/proxy/SizNoKNv7ysirHXyangwjUbrK9dE_CwzO6l11A-5CqxLuYd_RDkeVz0z9Ok4A_Y8tBSfcBoubnfLmwgZr_cw1E75PV8xg-Q"
+                        alt=""
+                        class="card-img-top img-fluid"
+                        style="width: 130px"
+                      />
+                      <div class="card-body">
+                        <p class="card-title">Java Complete</p>
+                        <p class="font-weight-bold card-text">TK.800</p>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </ul> -->
+
+          <div id="demo"></div>
+
+          <!-- books list end
+ -->
+          <!-- book-detail start
+ -->
+          <div class="book-detail invisible">
+            <div class="row">
+              <div class="col-sm-4">
+                <img
+                  src=""
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-sm-8">
+                <h4 class="font-weight-light"></h4>
+                <p>Publications name</p>
+                <div class="d-flex">
+                  <div class="ratings-log">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <p class="full-rating">13 ratings</p>
+                  <p>6 reviews</p>
+                  <p class="review"><a href="#">Write a review</a></p>
+                </div>
+                <div class="price-box">
+                  <div class="d-flex">
+                    <p>Our Price:</p>
+                    <h3 class="font-weight-light">TK. 800</h3>
+                  </div>
+                </div>
+                <div class="quantity-box">
+                  <div class="d-flex">
+                    <p>QTY:</p>
+                    <div class="quantity-meter">
+                      <div class="d-flex">
+                        <a href="#">+</a>
+                        <p>1</p>
+                        <a href="#">-</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-box">
+                  <div class="d-flex">
+                    <button class="btn btn-secondary">
+                      &#10084; Save to wishlist
+                    </button>
+                    <button class="btn btn-success">
+                      <i class="fa fa-shopping-cart"></i>Add To Cart
+                    </button>
+                  </div>
+                </div>
+                <p></p>
+              </div>
+            </div>
+
+            <!-- customer-review start
+ -->
+            <div class="customer-reivew">
+              <h2 class="font-weight-light">Customer Review</h2>
+              <hr />
+              <!--               single-user-review start
+ -->
+              <div class="single-user-review">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <div class="ratings-log">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        src="https://image.shutterstock.com/image-vector/thin-line-user-icon-on-260nw-519039097.jpg"
+                        alt="User Image"
+                        class="rounded-circle"
+                        style="max-width: 32px; max-height: 40px"
+                      />
+                      <div class="review-information">
+                        <p>user name</p>
+                        <p>Date of comment</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum
+                    </p>
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Was This review Helpfull ?</p>
+                    <div class="d-flex decision">
+                      <button class="btn btn-secondary">Yes</button>
+                      <p>Or</p>
+                      <button class="btn btn-secondary">No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+            </div>
+          </div>
+
+          <!--  footer-start
+ -->
+          <div class="footer-top">
+            <p style="text-align: center">
+              Rokomari.com is now one of the leading e-commerce organizations in
+              Bangladesh. It is indeed the biggest online bookshop or bookstore
+              in Bangladesh that helps you save time and money. You can buy
+              books online with a few clicks or a convenient phone call. With
+              breathtaking discounts and offers you can buy anything from Bangla
+              Upannash or English story books to academic, research or
+              competitive exam books. Superfast cash on delivery service brings
+              the products at your doorstep. Our customer support, return and
+              replacement policies will surely add extra confidence in your
+              online shopping experience. Happy Shopping with Rokomari.com!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p style="text-align: center">&#169;2012-2021 Rokomari.com</p>
+    </footer>
+  </body>
+</html>
